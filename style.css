@@ -1,61 +1,18 @@
-p.description {
+p {
     text-indent: 1em;
 }
 
 body {
-    display: flex;
-    background-color: #fefefe;
-}
-
-header {
-    border-right: solid #222;
-    margin-right: 15px;
-    padding-right: 15px;
-}
-
-section#Title {
-    text-align: center;
-    padding-bottom: 5px;
-    border-bottom: solid #222;
-}
-
-section#Title img {
-    width: 200px;
-    border: 1px solid #999;
-}
-
-main {
-    display: block;
-}
-
-section#Top {
-    display: flex;
-    border-bottom: solid #222;
-}
-
-section#Top section {
-    padding: 15px;
-}
-
-section#Skills {
-    margin: 15px;
-}
-
-section#Projects {
-    margin: 15px;
-}
-
-section#Bottom {
-    display: flex;
-}
-
-section#Bottom section {
-    width: 75vw;
+    width: 80%;
+    max-width: 800px;
+    margin: 0 auto;
+    font-family: 'Arial Narrow', Arial, sans-serif;
 }
 
 table {
     border: 2px solid #222;
     border-collapse: collapse;
+    min-width: 350px;
 }
 
 tr {
@@ -64,7 +21,6 @@ tr {
 
 td {
     border: 1px solid #999;
-    vertical-align: top;
 }
 
 thead {
@@ -72,10 +28,11 @@ thead {
     font-weight: bold;
 }
 
-section#Projects section.project>.meta {
-    font-size: 0.8em;
+.project>.meta {
+    text-indent: 1em;
+    font-size: 75%;
 }
 
-section#Projects section.project>.meta>.date {
+.project>.meta>.date {
     float: right;
 }

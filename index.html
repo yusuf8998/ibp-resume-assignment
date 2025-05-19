@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <meta charset="utf-8" />
+    <meta charset="UTF-8" />
     <title>Yusuf Karamustafaoğlu</title>
     <link rel="stylesheet" href="style.css" />
 </head>
@@ -10,7 +10,6 @@
 <body>
     <header>
         <section id="Title">
-            <img id="Photo" src="yusuf.jpg" />
             <h1 class="title">Yusuf Karamustafaoğlu</h1>
             <div id="Designation">
                 <span class="title">Computer Engineering Student</span>
@@ -18,16 +17,17 @@
                 <span class="organization">Karabük University</span>
             </div>
             <div id="Contact">
-                <div class="email"><a href="mailto:karamustafa1725@gmail.com" target="_blank"
-                        rel="noopener">karamustafa1725@gmail.com</a></div>
+                <div class="email">karamustafa1725@gmail.com</div>
                 <div class="github"><a href="https://github.com/yusuf8998">Github</a></div>
                 <div class="linkedin"><a
                         href="https://www.linkedin.com/in/yusuf-karamustafao%C4%9Flu-796869225/">LinkedIn</a></div>
             </div>
         </section> <!-- End Title -->
+    </header>
+    <main>
         <section id="Overview">
             <h2 class="title">Overview</h2>
-            <p class="description">
+            <p>
                 I began my education at İstanbul Yedikule Anatolian High School between 2017-2021, where I
                 laid the
                 foundation for my academic career.
@@ -38,14 +38,14 @@
                 toward a degree
                 in Computer Engineering.
             </p>
-            <p class="description">
+            <p>
                 I first started programming with game development on the Unity Engine using C# in 2015. During
                 these times
                 I started learning 3D modeling with Blender and drawing for game development with Photoshop.
                 After a couple of years I continued game development with modding Minecraft using Java.
                 Currently, I am using C++ to make my own game engine and develop games from scratch.
             </p>
-            <p class="description">
+            <p>
                 During my programming journey I also worked on:
             <ul>
                 <li>Web development with HTML, CSS, Javascript (Minimal), PHP.</li>
@@ -54,149 +54,137 @@
                 <li>Android app development with Java.</li>
             </ul>
             </p>
-            <p class="description">
+            <p>
                 In high school I also worked on a short film with my friends using Adobe Premiere and Adobe
                 After Effects.
             </p>
-        </section> <!-- End Overview -->
-    </header>
-    <main>
-        <section id="Top">
-            <section id="Education">
-                <h2 class="title">Education</h2>
-                <table>
-                    <thead>
-                        <td>Duration</td>
-                        <td>Program</td>
-                        <td>School/Institute</td>
-                    </thead>
-                    <tr>
-                        <td>2017 - 2021</td>
-                        <td>High School</td>
-                        <td>İstanbul Yedikule Anatolian High School</td>
-                    </tr>
-                    <tr>
-                        <td>2021 - 2023</td>
-                        <td>Computer Programming</td>
-                        <td>İstanbul Bilgi University</td>
-                    </tr>
-                    <tr>
-                        <td>2023 - Present</td>
-                        <td>Computer Engineering</td>
-                        <td>Karabük University</td>
-                    </tr>
-                </table>
-            </section> <!-- End Education -->
-            <section id="Languages">
-                <h2 class="title">Languages</h2>
-                <table>
-                    <thead>
-                        <td>Language</td>
-                        <td>Level</td>
-                    </thead>
-                    <tr>
-                        <td>Turkish</td>
-                        <td>Mother Tongue</td>
-                    </tr>
-                    <tr>
-                        <td>English</td>
-                        <td>C1 (YDS 2021)</td>
-                    </tr>
-                </table>
-            </section> <!-- End Languages -->
-            <section id="Skills">
-                <h2 class="title">Technical Skills</h2>
-                <ul id="Skills">
-                    <li class="skill">C#</li>
-                    <li class="skill">C++</li>
-                    <li class="skill">Python</li>
-                    <li class="skill">Java</li>
-                    <li class="skill">Unity Game Engine</li>
-                    <li class="skill">3D Modelling using Blender</li>
-                    <li class="skill">Photoshop</li>
-                </ul>
-            </section> <!-- End Skills-->
-        </section> <!-- End Top -->
-        <section id="Bottom">
-            <section id="Projects">
-                <h2 class="title">Projects</h2>
-                <div class="description">
-                    <section class="project">
-                        <h3 class="title">Ibex Renderer</h3>
-                        <div class="meta">
-                            <span class="field">C++ Graphics-Programming</span>
-                            <span class="date">Apr 2025 - Present</span>
-                        </div>
-                        <p class="description">
-                            A functional-WIP lightweight rendering engine for C++ using OpenGL, GLAD, GLM and GLFW
-                            libraries and is built using CMake.
-                            It contains a custom Wavefront 3D model importer for .obj and .mtl files and can calculate
-                            the face tangents for normal mapping.
-                            It allows custom vertex attribute definitions for flexibility.
-                            I am currently working on shadow casting.
-                        </p>
-                        <p class="description">
-                            <a
-                                href="https://github.com/yusuf8998/IbexRenderer">https://github.com/yusuf8998/IbexRenderer</a>
-                        </p>
-                    </section>
-                    <hr />
-                    <section class="project">
-                        <h3 class="title">Flint Resource Manager</h3>
-                        <div class="meta">
-                            <span class="field">C++</span>
-                            <span class="date">May 2025 - May 2025</span>
-                        </div>
-                        <p class="description">
-                            A small and lightweight resource manager for C++ built using CMake that keeps track of
-                            loaded
-                            resources and unloads them when appropriate.
-                            It allows three storage categories: Manual, Persistent and Volatile.
-                        <ul>
-                            <li>Manual category does not unload the resource until explicitly told to.</li>
-                            <li>Persistent category unloads the resource some time after the use count reaches zero.
-                            </li>
-                            <li>Volatile category unloads the resource when use count reaches zero.</li>
-                        </ul>
-                        </p>
-                        <p class="description">
-                            It uses a token object for resource access that increments/decrements the use count for
-                            resources on construction/destruction.
-                        </p>
-                        <p class="description">
-                            <a
-                                href="https://github.com/yusuf8998/FlintResourceManager">https://github.com/yusuf8998/FlintResourceManager</a>
-                        </p>
-                    </section>
-                    <hr />
-                    <section class="project">
-                        <h3 class="title">Ibex Engine</h3>
-                        <div class="meta">
-                            <span class="field">C++ Graphics-Programming Game-Dev</span>
-                            <span class="date">Jan 2025 - Present</span>
-                        </div>
-                        <p class="description">
-                            A WIP game engine written in C++ built using CMake.
-                            9th iteration of my custom game engine built for making 3D games with lower graphics
-                            quality.
-                            My goal is to make a game using minimal libraries and this engine is closer to being
-                            complete than my previous iterations.
-                            It uses a scene graph system and saves scene nodes using JSON. It currently has built-in
-                            nodes for skybox and billboard rendering, light casting and camera.
-                            It uses an early version of built-in Ibex Renderer and on hold until the first definitive
-                            renderer version. Current version has problems with shadow rendering but otherwise working
-                            for
-                            general model viewing with Phong lighting model using specular, normal and displacement
-                            maps.
-                        </p>
-                        <p class="description">
-                            <a
-                                href="https://github.com/yusuf8998/IbexEngine">https://github.com/yusuf8998/IbexEngine</a>
-                        </p>
-                    </section>
+        </section>
+        <section id="Education">
+            <h2 class="title">Education</h2>
+            <table>
+                <thead>
+                    <td>Duration</td>
+                    <td>Program</td>
+                    <td>School/Institute</td>
+                </thead>
+                <tr>
+                    <td>2017 - 2021</td>
+                    <td>High School</td>
+                    <td>İstanbul Yedikule Anatolian High School</td>
+                </tr>
+                <tr>
+                    <td>2021 - 2023</td>
+                    <td>Computer Programming</td>
+                    <td>İstanbul Bilgi University</td>
+                </tr>
+                <tr>
+                    <td>2023 - Present</td>
+                    <td>Computer Engineering</td>
+                    <td>Karabük University</td>
+                </tr>
+            </table>
+        </section><!-- End Education -->
+        <section id="Languages">
+            <h2 class="title">Languages</h2>
+            <table>
+                <thead>
+                    <td>Language</td>
+                    <td>Level</td>
+                </thead>
+                <tr>
+                    <td>Turkish</td>
+                    <td>Mother Tongue</td>
+                </tr>
+                <tr>
+                    <td>English</td>
+                    <td>C1 (YDS 2021)</td>
+                </tr>
+            </table>
+        </section> <!-- End Languages -->
+        <section id="Skills">
+            <h2 class="title">Technical Skills</h2>
+            <ul id="Skills">
+                <li class="skill">C#</li>
+                <li class="skill">C++</li>
+                <li class="skill">Python</li>
+                <li class="skill">Java</li>
+                <li class="skill">Unity Game Engine</li>
+                <li class="skill">3D Modelling using Blender</li>
+                <li class="skill">Photoshop</li>
+            </ul>
+        </section> <!-- End Skills-->
+        <section id="Projects">
+            <h2 class="title">Projects</h2>
+            <section class="project">
+                <h3 class="title">Ibex Renderer</h3>
+                <div class="meta">
+                    <span class="field">C++ Graphics-Programming</span>
+                    <span class="date">Apr 2025 - Present</span>
                 </div>
-            </section> <!-- End Projects -->
-        </section> <!-- End Bottom -->
+                <p>
+                    A functional-WIP lightweight rendering engine for C++ using OpenGL, GLAD, GLM and GLFW
+                    libraries and is built using CMake.
+                    It contains a custom Wavefront 3D model importer for .obj and .mtl files and can calculate
+                    the face tangents for normal mapping.
+                    It allows custom vertex attribute definitions for flexibility.
+                    I am currently working on shadow casting.
+                </p>
+                <p>
+                    <a href="https://github.com/yusuf8998/IbexRenderer">https://github.com/yusuf8998/IbexRenderer</a>
+                </p>
+            </section>
+            <hr />
+            <section class="project">
+                <h3 class="title">Flint Resource Manager</h3>
+                <div class="meta">
+                    <span class="field">C++</span>
+                    <span class="date">May 2025 - May 2025</span>
+                </div>
+                <p>
+                    A small and lightweight resource manager for C++ built using CMake that keeps track of loaded
+                    resources and unloads them when appropriate.
+                    It allows three storage categories: Manual, Persistent and Volatile.
+                <ul>
+                    <li>Manual category does not unload the resource until explicitly told to.</li>
+                    <li>Persistent category unloads the resource some time after the use count reaches zero.
+                    </li>
+                    <li>Volatile category unloads the resource when use count reaches zero.</li>
+                </ul>
+                </p>
+                <p>
+                    It uses a token object for resource access that increments/decrements the use count for
+                    resources on construction/destruction.
+                </p>
+                <p>
+                    <a
+                        href="https://github.com/yusuf8998/FlintResourceManager">https://github.com/yusuf8998/FlintResourceManager</a>
+                </p>
+            </section>
+            <hr />
+            <section class="project">
+                <h3 class="title">Ibex Engine</h3>
+                <div class="meta">
+                    <span class="field">C++ Graphics-Programming Game-Dev</span>
+                    <span class="date">Jan 2025 - Present</span>
+                </div>
+                <p>
+                    A WIP game engine written in C++ built using CMake.
+                    9th iteration of my custom game engine built for making 3D games with lower graphics
+                    quality.
+                    My goal is to make a game using minimal libraries and this engine is closer to being
+                    complete than my previous iterations.
+                    It uses a scene graph system and saves scene nodes using JSON. It currently has built-in
+                    nodes for skybox and billboard rendering, light casting and camera.
+                    It uses an early version of built-in Ibex Renderer and on hold until the first definitive
+                    renderer version. Current version has problems with shadow rendering but otherwise working for
+                    general model viewing with Phong lighting model using specular, normal and displacement maps.
+                </p>
+                <p>
+                    <a href="https://github.com/yusuf8998/IbexEngine">https://github.com/yusuf8998/IbexEngine</a>
+                </p>
+            </section>
+            <hr />
+        </section> <!-- End Projects -->
     </main>
 </body>
 
