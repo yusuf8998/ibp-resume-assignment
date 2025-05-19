@@ -4,23 +4,19 @@ p.description {
 
 body {
     display: flex;
-    /* margin-top: 0;
-    margin-bottom: 0; */
     background-color: #fefefe;
 }
 
 header {
-    width: 20vw;
     border-right: solid #222;
     margin-right: 15px;
     padding-right: 15px;
-    height: 100%;
 }
 
 section#Title {
     text-align: center;
     padding-bottom: 5px;
-    border-bottom: solid #222 ;
+    border-bottom: solid #222;
 }
 
 section#Title img {
@@ -34,8 +30,7 @@ main {
 
 section#Top {
     display: flex;
-    border-bottom: 1px solid #222;
-    width: 75vw;
+    border-bottom: solid #222;
 }
 
 section#Top section {
@@ -44,22 +39,14 @@ section#Top section {
 
 section#Skills {
     margin: 15px;
-    width: 35%;
 }
 
 section#Projects {
     margin: 15px;
-    width: 55%;
 }
 
 section#Bottom {
     display: flex;
-}
-
-section#Bottom iframe {
-    width: 100%;
-    height: 70vh;
-    border: 2px solid #222;
 }
 
 section#Bottom section {
@@ -83,11 +70,6 @@ td {
 thead {
     text-align: center;
     font-weight: bold;
-}
-
-section#Projects {
-    width: 100vw;
-    /* font-size: 0.93em; */
 }
 
 section#Projects section.project>.meta {
