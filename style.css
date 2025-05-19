@@ -1,0 +1,62 @@
+header,
+main,
+section {
+    display: block;
+}
+
+p.description {
+    text-indent: 1em;
+}
+
+body {
+    width: 80%;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+section#Education table {
+    border: 2px solid #222;
+    border-collapse: collapse;
+}
+
+section#Education tr {
+    border: 2px solid #222;
+}
+
+section#Education td {
+    border: 1px solid #999;
+    vertical-align: top;
+}
+
+section#Education thead {
+    text-align: center;
+    font-weight: bold;
+}
+
+section#Projects section.project>.meta {
+    font-size: 0.8em;
+}
+
+section#Projects section.project>.meta>.date {
+    float: right;
+}
+
+section#Languages table {
+    border: 2px solid #222;
+    border-collapse: collapse;
+    min-width: 350px;
+}
+
+section#Languages tr {
+    border: 2px solid #222;
+}
+
+section#Languages td {
+    border: 1px solid #999;
+    vertical-align: top;
+}
+
+section#Languages thead {
+    text-align: center;
+    font-weight: bold;
+}
